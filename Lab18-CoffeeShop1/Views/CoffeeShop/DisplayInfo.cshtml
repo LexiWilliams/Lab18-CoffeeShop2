@@ -1,0 +1,25 @@
+﻿
+@{
+    ViewData["Title"] = "DisplayInfo";
+}
+
+@model Lab18_CoffeeShop1.Models.RegisterUser
+
+<h1>User Info</h1>
+<p>
+    Name: @ViewBag.FirstName @ViewBag.LastName<br />
+    Email: @ViewBag.Email<br />
+    Password: @ViewBag.Password<br />
+    Birthday: @ViewBag.DOB.Date.ToString("MM/dd")<br />
+    Gender: @ViewBag.Gender<br />
+    Zip Code: @ViewBag.ZipCode<br />
+
+
+</p>
+
+<style>
+    body {
+        background-image: url('../../wispy.jpg');
+    }
+</style>
+
